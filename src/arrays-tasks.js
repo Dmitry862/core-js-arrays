@@ -20,8 +20,9 @@
  *    getIntervalArray(0, 100) => [ 0, 1, 2, ..., 100 ]
  *    getIntervalArray(3, 3) => [ 3 ]
  */
-function getIntervalArray(/* start, end */) {
-  throw new Error('Not implemented');
+function getIntervalArray(start, end) {
+  // throw new Error('Not implemented');
+  return Array.from({ length: end - start + 1 }, (_, index) => start + index);
 }
 
 /**
@@ -140,6 +141,7 @@ function getAverage(arr) {
  */
 function isSameLength(/* arr */) {
   throw new Error('Not implemented');
+  // return arr.every((item, _, array) => item.length === array[0].length);
 }
 
 /**
@@ -155,6 +157,7 @@ function isSameLength(/* arr */) {
  */
 function isValueEqualsIndex(/* arr */) {
   throw new Error('Not implemented');
+  // return arr.some((element, index) => element === index);
 }
 
 /**
@@ -201,6 +204,7 @@ function getHead(arr, n) {
  */
 function getTail(/* arr, n */) {
   throw new Error('Not implemented');
+  // return n > 0 ? arr.slice(-n) : [];
 }
 
 /**
