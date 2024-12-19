@@ -215,9 +215,9 @@ function getHead(arr, n) {
  *    getTail([ 'a', 'b', 'c', 'd'], 3) => [ 'b', 'c', 'd' ]
  *    getTail([ 'a', 'b', 'c', 'd'], 0) => []
  */
-function getTail(/* arr, n */) {
-  throw new Error('Not implemented');
-  // return n > 0 ? arr.slice(-n) : [];
+function getTail(arr, n) {
+  // throw new Error('Not implemented');
+  return n > 0 ? arr.slice(-n) : [];
 }
 
 /**
